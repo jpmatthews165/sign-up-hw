@@ -11,6 +11,6 @@ $gender= $_GET["gender"];
 $sql = "insert into accounts (email, fname, lname,phone, birthday,
 		gender) values ('$fname', '$lname', '$email', '$phone', '$birthday', '$gender');";
 $results = runQuery($sql);
-header("Location: index.html");
+header("Location: successsignup.php");
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 $hostname = "sql1.njit.edu";
 $username = "jm775";
-$password = "m2JBjN1E";
+$password = "m2JBjuN1E";
 $conn = NULL;
 try 
 {
