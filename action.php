@@ -1,14 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>To-do Sign-Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+</html>
 <?php
 session_start();
 require "db.php" ;
 
-$fname= $_GET["fname"];
-$lname= $_GET["lname"];
-$email= $_GET["email"];
-$phone= $_GET["phone"];
-$birthday= $_GET["birthday"];
-$gender= $_GET["gender"];
-$password= $_GET["password"];
+$fname= $_POST["fname"];
+$lname= $_POST["lname"];
+$email= $_POST["email"];
+$phone= $_POST["phone"];
+$birthday= $_POST["birthday"];
+$gender= $_POST["gender"];
+$password= $_POST["password"];
 
 $_SESSION['fname'] = $fname;
 $_SESSION['lname'] = $lname;
